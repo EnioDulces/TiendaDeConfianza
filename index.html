@@ -501,7 +501,7 @@
     .remove-item-btn:hover {
       background: #e04848;
     }
-
+    
     /* Total del carrito */
     #cartTotal {
       font-weight: 700;
@@ -622,11 +622,34 @@
 "></div>
 
 
+<section id="productos" class="productos-grid">
+
+          
+       <div class="producto" data-name="Combo #1 " data-price="580" data-category="Combos">
+        <h2>Combo #1</h2>
+        <img src="Imagenes/Combo 1.png" alt="Combo #1">
+        <h2>5 ChupaChupas <br> 2 Monro <br> 2 Refrescos  <br>$580</h2>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+<!-- Combos 
+       <div class="producto" data-name="Combo #2 " data-price="850" data-category="Combos">
+        <h2>Combo #2</h2>
+        <img src="Imagenes/" alt="Combo #2">
+        <h2> 1 Malta <br> 1 Refresco Lata <br> 2 Galletas Golozetas <br> 2 Ricco <br>$850</h2>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+
+-->
+</section>
+
+    
+     
     <section id="productos" class="productos-grid">
+      
       <!-- Productos con botón agregar al carrito -->
-      <div class="producto" data-name="Chupachups" data-price="50" data-category="chucherias">
-        <img src="Imagenes/ChupaChupas.jpg" alt="Chupachups">
-        <h2>Chupachups <br>$50</h2>
+      <div class="producto" data-name="Chupachupas" data-price="50" data-category="chucherias">
+        <img src="Imagenes/ChupaChupas.jpg" alt="Chupachupas">
+        <h2>Chupachupas <br>$50</h2>
         <button class="add-to-cart">Agregar al carrito</button>
       </div>
 
@@ -655,7 +678,7 @@
       </div>
 
       <div class="producto" data-name="Refrescos" data-price="50" data-category="chucherias">
-        <img src="Imagenes/Refrescos.jpg" alt="Refrescos">
+        <img src="Imagenes/Refrescos.jpg" alt="Papas Ruffles">
         <h2>Refrescos<br>$50</h2>
         <button class="add-to-cart">Agregar al carrito</button>
       </div>
@@ -672,8 +695,14 @@
         <button class="add-to-cart">Agregar al carrito</button>
       </div>
 
-      <div class="producto" data-name="Minnes" data-price="100" data-category="chucherias">
-        <img src="Imagenes/Minnes.jpg" alt="Minnes">
+       <div class="producto" data-name="Salricas" data-price="200" data-category="chucherias">
+        <img src="Imagenes/Salricas.jpg" alt="Salricas">
+        <h2>Salricas<br>$200</h2>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-name="Minees" data-price="100" data-category="chucherias">
+        <img src="Imagenes/Minnes.jpg" alt="Minees">
         <h2>Minees<br>$100</h2>
         <button class="add-to-cart">Agregar al carrito</button>
       </div>
@@ -744,9 +773,15 @@
         <button class="add-to-cart">Agregar al carrito</button>
       </div>
 
-      <div class="producto" data-name="Detergente" data-price="800" data-category="aseo">
+      <div class="producto" data-name="Detergente 1Kg" data-price="800" data-category="aseo">
         <img src="Imagenes/Detergente.png" alt="Detergente">
         <h2>Detergente 1Kg<br>$800</h2>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-name="Detergente 500gr" data-price="500" data-category="aseo">
+        <img src="Imagenes/Detergente 1.jpg" alt="Detergente">
+        <h2>Detergente 500gr<br>$500</h2>
         <button class="add-to-cart">Agregar al carrito</button>
       </div>
 
@@ -769,7 +804,7 @@
   <!-- Carrito lateral -->
   <aside id="cartSidebar" aria-label="Carrito de compras">
     <button id="closeCartBtn" aria-label="Cerrar carrito">Cerrar ✖</button>
-    <h2>Tu carrito</h2>
+    <h2>Tu Carrito🛒</h2>
    <div id="cartItems" aria-live="polite" aria-atomic="true">
       <!-- Productos agregados -->
     </div>
@@ -1235,5 +1270,3 @@
   
 </body>
 </html>
-
-
