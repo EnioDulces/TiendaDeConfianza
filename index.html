@@ -213,7 +213,17 @@
                 box-shadow: 0 0 4px #00e676;
             }
         }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
         /* Botón carrito y notificación */
         .cart-btn {
             background: none;
@@ -1654,3 +1664,4 @@ let loadingInterval = setInterval(() => {
 
 </body>
 </html>
+
