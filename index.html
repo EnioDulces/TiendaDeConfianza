@@ -86,7 +86,17 @@
         header.scrolled .logo-text {
             font-size: 1.3rem;
         }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
         .menu-toggle {
             display: none;
             font-size: 1.6rem;
@@ -213,17 +223,7 @@
                 box-shadow: 0 0 4px #00e676;
             }
         }
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
 
-/* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
-}
         /* Botón carrito y notificación */
         .cart-btn {
             background: none;
@@ -391,6 +391,20 @@ input[type=number] {
             top: 10px;
             left: -40px;
             background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px 50px;
+            transform: rotate(-45deg);
+            font-weight: bold;
+            text-transform: uppercase;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .nuevo {
+            position: absolute;
+            top: 10px;
+            left: -40px;
+            background: rgb(255, 0, 0);
             color: white;
             padding: 5px 50px;
             transform: rotate(-45deg);
@@ -954,6 +968,18 @@ input[type=number] {
             <button class="add-to-cart">Agregar al carrito</button>
         </div>
 
+            <div class="producto" data-name="Porleo" data-price="100" data-category="chucherias">
+            <img src="Imagenes/porleo.jpg" alt="Minees">
+            <h2>Porleo<br>$100</h2>
+              <div class="cantidad-control">
+              <button class="menos">–</button>
+              <input type="number" class="cantidad" value="1" min="1" readonly>
+              <button class="mas">+</button>
+            </div>
+             <div class="nuevo">Nuevo</div>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+
         <div class="producto" data-name="Leche Condensada" data-price="520" data-category="chucherias">
             <img src="Imagenes/Leche Condensada.jpg" alt="Leche Condensada">
             <h2>Leche Condensada <br>$520</h2>
@@ -991,7 +1017,6 @@ input[type=number] {
         <div class="producto" data-name="Cerveza Parranda" data-price="200" data-category="liquidos">
             <img src="Imagenes/Parranda.jpg" alt="Cerveza Parranda">
             <h2>Cerveza Parranda <br>$200</h2>
-           
               <div class="cantidad-control">
               <button class="menos">–</button>
               <input type="number" class="cantidad" value="1" min="1" readonly>
@@ -1664,4 +1689,3 @@ let loadingInterval = setInterval(() => {
 
 </body>
 </html>
-
