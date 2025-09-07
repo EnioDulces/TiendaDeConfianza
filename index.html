@@ -1230,7 +1230,7 @@ input[type=number] {
             <button class="add-to-cart">Agregar al carrito</button>
         </div>
 
-        <div class="producto" data-name="Pasta Dental" data-price="420" data-category="aseo">
+        <div class="producto" data-name="Pasta Dental 100gr" data-price="420" data-category="aseo">
             <img src="Imagenes/Pasta Dental.jpg" alt="Pasta Dental">
             <h2>Pasta Dental<br>$420</h2>
               <div class="cantidad-control">
@@ -1521,21 +1521,46 @@ document.querySelectorAll('.producto').forEach(producto => {
         }
 
         // Crear resumen pedido
-        let mensaje = `*Pedido desde Tiendita El Cornito*%0A%0A`;
-        carrito.forEach(item => {
-            mensaje += `${item.nombre} x${item.cantidad} = $${item.precio * item.cantidad}%0A`;
-        });
-        const total = carrito.reduce((sum, item) => sum + (item.precio * item.cantidad), 0);
-        mensaje += `%0ATotal: $${total}%0A%0A`;
-        mensaje += `*Datos del cliente:*%0ANombre: ${encodeURIComponent(nombre)}%0ATeléfono: ${encodeURIComponent(telefono)}%0ADirección: ${encodeURIComponent(direccion)}`;
+       let mensaje = `*Pedido desde Tiendita El Cornito*%0A%0A`;
 
-        // Número WhatsApp (pon tu número aquí, formato internacional sin + ni espacios)
-        const numeroWhatsApp = '+5352461405';
+// productos en el carrito
+carrito.forEach(item => {
+    mensaje += `${item.nombre} x${item.cantidad} = $${item.precio * item.cantidad}%0A`;
+});
 
-        const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+// subtotal de productos
+const subtotal = carrito.reduce((sum, item) => sum + (item.precio * item.cantidad), 0);
 
-        window.open(url, '_blank');
+// valor del domicilio (puedes cambiarlo o hacerlo dinámico)
+const domicilio = 50;
+
+const total = subtotal + domicilio;
+
+// obtener la fecha actual
+const fecha = new Date();
+const opcionesFecha = { day: '2-digit', month: '2-digit', year: 'numeric' };
+const fechaCompra = fecha.toLocaleDateString('es-ES', opcionesFecha);
+
+// mensaje con desglose
+mensaje += `%0ASubtotal: $${subtotal}`;
+mensaje += `%0ADomicilio: $${domicilio}`;
+mensaje += `%0A------------------`;
+mensaje += `%0ATotal: $${total}%0A`;
+mensaje += `%0A🗓️ Fecha de compra: ${fechaCompra}%0A%0A`;
+
+mensaje += `*Datos del cliente:*%0ANombre: ${encodeURIComponent(nombre)}%0ATeléfono: ${encodeURIComponent(telefono)}%0ADirección: ${encodeURIComponent(direccion)}%0A%0A%0A`;
+
+mensaje += `¡Gracias por tu compra! Tu pedido será atendido pronto.`;
+
+// Número WhatsApp (formato internacional sin + ni espacios)
+const numeroWhatsApp = '5352461405';
+
+const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+
+window.open(url, '_blank');
+
     });
+  
 
 </script>
 <!-- Texto flotante de ayuda -->
