@@ -267,8 +267,8 @@
     <section id="contacto" aria-label="Contacto">
       <div class="title"><h2>Contáctanos</h2></div>
       <div class="card" style="padding:16px">
-        <p>📍 Calle Cuba #58 Entre 3 y 4 Reparto San Antonio El Cornito</p>
-        <p>📞 Tel: +53 52461405</p>
+        <p>📍 Calle 16  #9/Calle Cucalambe y LL, La Caldosa.</p>
+        <p>📞 Tel: +53 54063924</p>
         <p>✉️ Email: eniomedina2003@gmail.com</p>
         <p>
           <a href="https://wa.me/5352461405?text=Buenas%2C%20quiero%20hacer%20un%20pedido" target="_blank" style="color:var(--brand); font-weight:900; text-decoration:none">💬 Escríbenos por WhatsApp</a>
@@ -316,7 +316,7 @@
       1) Agrega productos al carrito. 2) Abre el carrito 🛒. 3) Completa tus datos. 4) Envía por WhatsApp. ✅</p>
       <p><strong>¿Cuánto cuesta el envío?</strong><br>El domicilio cuesta $50 desde El Cornito hasta la aldea o zonas cercanas.</p>
       <p><strong>¿Horario?</strong><br>8:00 AM — 9:00 PM.</p>
-      <p><strong>¿Dónde están ubicados?</strong><br>📍 Calle Cuba #58 Entre 3 y 4 Reparto San Antonio El Cornito</p>
+      <p><strong>¿Dónde están ubicados?</strong><br>📍 Calle 16  #9/Calle Cucalambe y LL, La Caldosa.</p>
     </div>
   </div>
 
@@ -342,7 +342,7 @@
     const PRODUCTS = [
       // Combos (Destacados)
       {name:"Combo #1", price:580, category:"Combos", img:"Imagenes/Combo 1.png", featured:true, bestseller:true},
-      {name:"Combo #2", price:850, category:"Combos", img:"Imagenes/Combo 2.jpg", featured:true, sale:0},
+      {name:"Combo #2", price:850, category:"Combos", img:"Imagenes/Combo 2.png", featured:true, sale:0},
 
       // Chucherías
       {name:"Chupachupas", price:50, category:"chucherias", img:"Imagenes/ChupaChupas.jpg", bestseller:true},
@@ -350,40 +350,39 @@
       {name:"Galletas Golozetas", price:70, category:"chucherias", img:"Imagenes/Golozetas.jpg"},
       {name:"Lorenas", price:150, category:"chucherias", img:"Imagenes/Lorenas.png", stock:false},
       {name:"Refrescos", price:40, category:"chucherias", img:"Imagenes/Refrescos.jpg"},
-      {name:"Menta Plus", price:100, category:"chucherias", img:"Imagenes/Menta Plus.jpg"},
-      {name:"Alokados Varios Sabores", price:10, category:"chucherias", img:"Imagenes/Alocados.jpg", sale:0},
+      {name:"Menta Plus", price:100, category:"chucherias", img:"Imagenes/menta plus.png"},
+      {name:"Alokados Varios Sabores", price:10, category:"chucherias", img:"Imagenes/Alocados.png", sale:0},
       {name:"Crocanticas", price:180, category:"chucherias", img:"Imagenes/Salricas.png"},
       {name:"Minees", price:100, category:"chucherias", img:"Imagenes/Minnes.jpg"},
       {name:"Pettite", price:200, category:"chucherias", img:""},
       {name:"Elegance", price:200, category:"chucherias", img:"Imagenes/Elegance.jpg"},
       {name:"Hipopo", price:200, category:"chucherias", img:"Imagenes/Hipopo.jpg"},
-      {name:"Bien", price:150, category:"chucherias", img:""},
-      {name:"Paradise", price:150, category:"chucherias", img:""},
-      {name:"Lamore", price:150, category:"chucherias", img:""},
-      {name:"White", price:150, category:"chucherias", img:""},
-      {name:"Chicle", price:100, category:"chucherias", img:""},
-      {name:"Biskiato", price:150, category:"chucherias", img:""},
-      {name:"Duplex", price:60, category:"chucherias", img:""},
+      {name:"Bien", price:150, category:"chucherias", img:"Imagenes/Bien.jpg"},
+      {name:"Paradise", price:150, category:"chucherias", img:"Imagenes/Paradise.png"},
+      {name:"Lamore", price:150, category:"chucherias", img:"Imagenes/Lamore 150.jpg"},
+      {name:"White", price:150, category:"chucherias", img:"Imagenes/Black & White.jpg"},
+      {name:"Chicle", price:100, category:"chucherias", img:"Imagenes/chicle.jpg"},
+      {name:"Biskiato", price:150, category:"chucherias", img:"Imagenes/Biskiato.jpg"},
+      {name:"Duplex", price:60, category:"chucherias", img:"Imagenes/Duplex.jpg"},
       {name:"Maria", price:300, category:"chucherias", img:""},
-      {name:"Princees", price:300, category:"chucherias", img:""},
+      {name:"Princees", price:300, category:"chucherias", img:"Imagenes/Princess.jpg"},
       {name:"Larome", price:300, category:"chucherias", img:"Imagenes/Lamore.jpg"},
-      {name:"Creme", price:100, category:"chucherias", img:""},
+      {name:"Creme", price:100, category:"chucherias", img:"Imagenes/Creme.png"},
 
       {name:"Leche Condensada", price:500, category:"chucherias", img:"Imagenes/Leche Condensada.jpg"},
 
       // Líquidos
-      {name:"Cerveza Calatrava", price:250, category:"liquidos", img:"Imagenes/Parranda.jpg"},
-      {name:"Cerveza Parranda", price:200, category:"liquidos", img:"Imagenes/Parranda.jpg", stock:false},
-      {name:"Refresco Lata Santa Cola", price:200, category:"liquidos", img:"Imagenes/Refresco Cola.jpg"},
+      {name:"Cerveza Calatrava", price:250, category:"liquidos", img:"Imagenes/Calatrava.jpg"},
+      {name:"Refresco Lata Santa Cola", price:200, category:"liquidos", img:"Imagenes/Refresco Lata.png"},
 
       // Cocina
       {name:"Sasón Goya", price:70, category:"cocina", img:"Imagenes/Golla.jpg", stock:false },
       {name:"Pastilla de Pollo", price:30, category:"cocina", img:"Imagenes/Pastillitas De Pollo.jpg"},
       {name:"Aceite", price:100, category:"cocina", img:"Imagenes/Aceite.jpg"},
-      {name:"Salchicha", price:400, category:"cocina", img:""},
+      {name:"Salchicha", price:400, category:"cocina", img:"Imagenes/Salchichas.jpg"},
       {name:"Lata Pure", price:400, category:"cocina", img:"Imagenes/Lata de Tomate.jpg"},
-      {name:"Arroz", price:600, category:"cocina", img:""},
-      {name:"Frijoles", price:850, category:"cocina", img:""},
+      {name:"Arroz", price:600, category:"cocina", img:"Imagenes/Arroz.jpg"},
+      {name:"Frijoles", price:850, category:"cocina", img:"Imagenes/Frijoles.jpg"},
 
       // Aseo
       {name:"Jabon Aura", price:170, category:"aseo", img:"Imagenes/Jabon Aura.jpg"},
@@ -392,8 +391,8 @@
       {name:"Detergente 500gr", price:500, category:"aseo", img:"Imagenes/Detergente 1.jpg", stock:false},
 
       // Pastas
-      {name:"Espaguetis", price:340, category:"pastas", img:"Imagenes/Espagueti.jpg"},
-      {name:"Codito", price:340, category:"pastas", img:"Imagenes/Coditos.jpg"}
+      {name:"Espaguetis", price:300, category:"pastas", img:"Imagenes/Espagueti.jpg"},
+      {name:"Codito", price:300, category:"pastas", img:"Imagenes/Coditos.jpg"}
     ];
 
     // *************************
