@@ -672,7 +672,7 @@
       const direccion = document.getElementById("direccion").value.trim();
       if (!nombre || !telefono || !direccion){ alert("Completa todos los campos."); return; }
 
-      let msg = `*Pedido desde Tiendita El Cornito*%0A%0A`;
+      let msg = `*Pedido desde Baby Medina*%0A%0A`;
       cart.forEach(i=>{ msg += `${i.name} x${i.qty} = $${i.price*i.qty}%0A`; });
       const total = cart.reduce((a,b)=>a+b.price*b.qty,0);
       msg += `%0ATotal: $${total}%0A%0A`;
