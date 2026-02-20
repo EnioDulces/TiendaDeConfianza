@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tiendita El Cornito — Compra fácil</title>
-  <link rel="icon" href="Imagenes/logo.png" type="image/x-icon">
+  <title>Baby Medina</title>
+  <link rel="icon" href="Imagenes/Logo.jpg" type="image/x-icon">
   <meta name="theme-color" content="#111111"/>
   <style>
     :root{
@@ -187,8 +187,8 @@
     <div class="wrap">
       <div class="row">
         <a class="brand" href="#inicio" aria-label="Ir al inicio">
-          <img src="Imagenes/logo.png" alt="Logo Tiendita El Cornito">
-          <span>Tiendita El Cornito</span>
+          <img src="Imagenes/Logo.jpg" alt="Logo Tiendita El Cornito">
+          <span>Baby Medina</span>
         </a>
         <nav aria-label="Navegación principal">
           <a href="#destacados" class="active">Destacados</a>
@@ -341,54 +341,55 @@
     // *************************
     const PRODUCTS = [
       // Combos (Destacados)
-      {name:"Combo #1", price:580, category:"Combos", img:"Imagenes/Combo 1.png", featured:true, bestseller:true},
-      {name:"Combo #2", price:850, category:"Combos", img:"Imagenes/Combo 2.png", featured:true, sale:0},
+     // {name:"Combo #1", price:580, category:"Combos", img:"Imagenes/Combo 1.png",stock:false, featured:true, bestseller:true},
+     // {name:"Combo #2", price:850, category:"Combos", img:"Imagenes/Combo 2.png", stock:false, featured:true, sale:0},
 
       // Chucherías
       {name:"Chupachupas", price:50, category:"chucherias", img:"Imagenes/ChupaChupas.jpg", bestseller:true},
       {name:"Galletas Monro", price:150, category:"chucherias", img:"Imagenes/Monro.jpg"},
       {name:"Galletas Golozetas", price:70, category:"chucherias", img:"Imagenes/Golozetas.jpg"},
-      {name:"Lorenas", price:150, category:"chucherias", img:"Imagenes/Lorenas.png", stock:false},
-      {name:"Refrescos", price:40, category:"chucherias", img:"Imagenes/Refrescos.jpg"},
-      {name:"Menta Plus", price:100, category:"chucherias", img:"Imagenes/menta plus.png"},
+      // Agotado{name:"Lorenas", price:150, category:"chucherias", img:"Imagenes/Lorenas.png", stock:false},
+      // Agotado{name:"Refrescos", price:40, category:"chucherias", img:"Imagenes/Refrescos.jpg"},
+     //Agotado {name:"Menta Plus", price:100, category:"chucherias", img:"Imagenes/menta plus.png"},
       {name:"Alokados Varios Sabores", price:10, category:"chucherias", img:"Imagenes/Alocados.png", sale:0},
-      {name:"Crocanticas", price:180, category:"chucherias", img:"Imagenes/Salricas.png"},
       {name:"Minees", price:100, category:"chucherias", img:"Imagenes/Minnes.jpg"},
-      {name:"Pettite", price:200, category:"chucherias", img:""},
-      {name:"Elegance", price:200, category:"chucherias", img:"Imagenes/Elegance.jpg"},
-      {name:"Hipopo", price:200, category:"chucherias", img:"Imagenes/Hipopo.jpg"},
+      {name:"Creme", price:100, category:"chucherias", img:"Imagenes/Creme.png"},
       {name:"Bien", price:150, category:"chucherias", img:"Imagenes/Bien.jpg"},
       {name:"Paradise", price:150, category:"chucherias", img:"Imagenes/Paradise.png"},
       {name:"Lamore", price:150, category:"chucherias", img:"Imagenes/Lamore 150.jpg"},
       {name:"White", price:150, category:"chucherias", img:"Imagenes/Black & White.jpg"},
-      {name:"Chicle", price:100, category:"chucherias", img:"Imagenes/chicle.jpg"},
       {name:"Biskiato", price:150, category:"chucherias", img:"Imagenes/Biskiato.jpg"},
-      {name:"Duplex", price:60, category:"chucherias", img:"Imagenes/Duplex.jpg"},
+      {name:"Crocanticas", price:180, category:"chucherias", img:"Imagenes/Salricas.png", stock:false},
+      {name:"Elegance", price:200, category:"chucherias", img:"Imagenes/Elegance.jpg"},
+      {name:"Hipopo", price:200, category:"chucherias", img:"Imagenes/Hipopo.jpg"},
+      {name:"Papita Frita", price:250, category:"chucherias", img:"Imagenes/Papitas.jpg"},
+      // Agotada{name:"Duplex", price:60, category:"chucherias", img:"Imagenes/Duplex.jpg"},
       {name:"Maria", price:300, category:"chucherias", img:""},
       {name:"Princees", price:300, category:"chucherias", img:"Imagenes/Princess.jpg"},
       {name:"Larome", price:300, category:"chucherias", img:"Imagenes/Lamore.jpg"},
-      {name:"Creme", price:100, category:"chucherias", img:"Imagenes/Creme.png"},
-
       {name:"Leche Condensada", price:500, category:"chucherias", img:"Imagenes/Leche Condensada.jpg"},
 
       // Líquidos
-      {name:"Cerveza Calatrava", price:250, category:"liquidos", img:"Imagenes/Calatrava.jpg"},
-      {name:"Refresco Lata Santa Cola", price:200, category:"liquidos", img:"Imagenes/Refresco Lata.png"},
+      {name:"Cerveza Calatrava", price:250, category:"liquidos", img:"Imagenes/Calatrava.jpg",stock:false},
+      {name:"Malta", price:280, category:"liquidos", img:"Imagenes/Malta.jpg"},
 
       // Cocina
-      {name:"Sasón Goya", price:70, category:"cocina", img:"Imagenes/Golla.jpg", stock:false },
+      {name:"Sasón Gova", price:60, category:"cocina", img:"Imagenes/Golla.jpg", },
       {name:"Pastilla de Pollo", price:30, category:"cocina", img:"Imagenes/Pastillitas De Pollo.jpg"},
-      {name:"Aceite", price:100, category:"cocina", img:"Imagenes/Aceite.jpg"},
-      {name:"Salchicha", price:400, category:"cocina", img:"Imagenes/Salchichas.jpg"},
+      {name:"Sopa de Pollo", price:200, category:"cocina", img:"Imagenes/sopa instantanea.jpg"},
+      {name:"Picadillo ", price:350, category:"cocina", img:"Imagenes/Picadillo.jpg",},
+      {name:"Salchicha", price:400, category:"cocina", img:"Imagenes/Salchichas.jpg",stock:false},
       {name:"Lata Pure", price:400, category:"cocina", img:"Imagenes/Lata de Tomate.jpg"},
-      {name:"Arroz", price:600, category:"cocina", img:"Imagenes/Arroz.jpg"},
-      {name:"Frijoles", price:850, category:"cocina", img:"Imagenes/Frijoles.jpg"},
+      {name:"Azucar", price:670, category:"cocina", img:"Imagenes/Azucar.jpg"},
+      {name:"Arroz", price:700, category:"cocina", img:"Imagenes/Arroz.jpg"},
+      {name:"Frijoles", price:900, category:"cocina", img:"Imagenes/Frijoles.jpg"},
+      {name:"Aceite", price:1500, category:"cocina", img:"Imagenes/Aceite.jpg"},
 
       // Aseo
       {name:"Jabon Aura", price:170, category:"aseo", img:"Imagenes/Jabon Aura.jpg"},
-      {name:"Pasta Dental", price:400, category:"aseo", img:"Imagenes/Pasta.jpg"},
-      {name:"Detergente 1Kg", price:800, category:"aseo", img:"Imagenes/Detergente.png", stock:false},
-      {name:"Detergente 500gr", price:500, category:"aseo", img:"Imagenes/Detergente 1.jpg", stock:false},
+      {name:"Pasta Dental", price:500, category:"aseo", img:"Imagenes/Pasta.jpg"},
+      //{name:"Detergente 1Kg", price:800, category:"aseo", img:"Imagenes/Detergente.png", stock:false},
+      //{name:"Detergente 500gr", price:500, category:"aseo", img:"Imagenes/Detergente 1.jpg", stock:false},
 
       // Pastas
       {name:"Espaguetis", price:300, category:"pastas", img:"Imagenes/Espagueti.jpg"},
